@@ -1,4 +1,4 @@
-const baseImagePath = '/assets/base.png';
+const baseImagePath = `${import.meta.env.BASE_URL}assets/base.png`;
 const defaultMeetingTime = '19:00';
 const meetingTextFontSize = 102;
 
