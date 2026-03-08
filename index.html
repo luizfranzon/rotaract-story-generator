@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Story - Rotaract</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Gerador automático de story</h1>
+      <p id="meeting-info" class="meeting-info"></p>
+      <div class="inputs">
+        <label class="field" for="meeting-date">
+          Data da reunião
+          <input id="meeting-date" type="date" />
+        </label>
+        <label class="field" for="meeting-time">
+          Horário da reunião
+          <input id="meeting-time" type="time" />
+        </label>
+      </div>
+      <div class="actions">
+        <button id="generate-btn" type="button">Gerar arte</button>
+        <button id="download-btn" type="button" disabled>Baixar imagem</button>
+        <button id="reset-btn" type="button">Resetar</button>
+      </div>
+      <img id="preview" alt="Prévia da arte gerada" />
+      <canvas id="canvas" hidden></canvas>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
